@@ -86,10 +86,18 @@ color_info_df = pd.DataFrame(
 )
 
 def _get_matplotlib_cmap(cm_name):
+    """
+    Function to load the color maps from matplotlib
+    """
     return plt.get_cmap(cm_name)
 
 
 def _get_scientific_colors(cm_name):
+    """
+    Function to load the color maps from scientific colors
+    Color files ending with digits contain discrete color maps
+    Color files ending with the letter S contain categorical color maps
+    """
     color_path = os.path.join(color_data_root, "scientific_colors", cm_name + '.txt')
     if cm_name[-1].isdigit():
         with open(color_path) as f:
@@ -106,6 +114,9 @@ def _get_scientific_colors(cm_name):
 
 
 def _get_cet_cmap(cm_name):
+    """
+    Function to load the color maps from CET
+    """
     cm_data = np.loadtxt(
         os.path.join(color_data_root, "cet_colors", cm_name + '.txt'),
         delimiter=','
@@ -114,6 +125,9 @@ def _get_cet_cmap(cm_name):
 
 
 def _get_ocean_cmap(cm_name):
+    """
+    Function to load the color mpas from Ocean
+    """
     cm_data = np.loadtxt(
         os.path.join(color_data_root, "ocean_colors", cm_name + '.txt'),
     )
@@ -121,6 +135,9 @@ def _get_ocean_cmap(cm_name):
 
 
 def _get_wesanderson_cmap(cm_name):
+    """
+    Function to load the color maps from Wes Anderson
+    """
     wes_mapping = {
         "Royal2": ["#9A8822", "#F5CDB4", "#F8AFA8", "#FDDDA0", "#74A089"],
         "Zissou1": ["#3B9AB2", "#78B7C5", "#EBCC2A", "#E1AF00", "#F21A00"],
@@ -135,6 +152,10 @@ def _get_wesanderson_cmap(cm_name):
 
 
 def get_cmap(cm_name):
+    """
+    Function to return the specific color map
+    The response is similar to plt.get_camp
+    """
     if not isinstance(cm_name, str):
         logger.error("Invalid color map name. Please input a string.")
         return None
@@ -162,6 +183,10 @@ def list_cmaps(
     perceptually_uniform=None,
     color_blind_friendly=None
 ):
+    """
+    Function to list available color maps
+    Different parameters are used to filter the results
+    """
     temp_df = color_info_df.drop('source', axis=1)
     if cm_class is not None:
         cm_class_set = set(color_info_df.cm_class)
@@ -187,6 +212,9 @@ def list_cmaps(
 
 
 def _plot_cmaps_gradients(cm_list):
+    """
+    Function to plot the color maps in bars
+    """
     nrows = len(cm_list)
     gradient = np.linspace(0, 1, 256)
     gradient = np.vstack((gradient, gradient))
@@ -194,8 +222,6 @@ def _plot_cmaps_gradients(cm_list):
     fig, axes = plt.subplots(nrows=nrows, figsize=(8, nrows*0.5))
     if nrows == 1:
         axes = [axes]
-    #fig.subplots_adjust(top=0.95, bottom=0.01, left=0.2, right=0.99)
-    #axes[0].set_title(cmap_category + ' colormaps', fontsize=14)
 
     for ax, (cm_name, cm) in zip(axes, cm_list):
         ax.imshow(gradient, aspect='auto', cmap=cm)
@@ -204,7 +230,6 @@ def _plot_cmaps_gradients(cm_list):
         y_text = pos[1] + pos[3]/2.
         fig.text(x_text, y_text, cm_name, va='center', ha='right', fontsize=14)
 
-    # Turn off *all* ticks & spines, not just the ones with colormaps.
     for ax in axes:
         ax.set_axis_off()
     #plt.show()
@@ -217,6 +242,10 @@ def plot_cmaps(
     perceptually_uniform=None,
     color_blind_friendly=None
 ):
+    """
+    Function to plot the color maps in bars for easy selection
+    Different parameters are used to filter the results
+    """
     if cm_name is None:
         color_df = list_cmaps(
             cm_class=cm_class,
