@@ -30,12 +30,37 @@ List all color maps
 scicolor.list_cmaps()
 ```
 
-List the color maps that are sequential, discrete, and color blind friendly.
+List the color maps that are sequential, discrete, and color blind friendly
+
+```py
+scicolor.list_cmaps(cm_class='sequential', cm_type="discrete", color_blind_friendly=True)
+```
+
+See below for more on the classes and types of the color maps.
+
+### Plot color maps
+
+Plot a color map
+
+```py
+scicolor.plot_cmaps('tab20')
+```
+
+Plot multiple color maps
+
+```py
+scicolor.plot_cmaps(['tab20', 'tab20b'])
+```
+
+Plot the color maps that are sequential, discrete, and color blind friendly
 
 ```py
 scicolor.plot_cmaps(cm_class='sequential', cm_type="discrete", color_blind_friendly=True)
 ```
-### 
+
+Below is a screen shot of `scicolor.plot_cmaps()`, which shows all available color maps.
+
+![list](list_of_cms.png)
 
 # Installation
 
@@ -64,9 +89,7 @@ pip install -e ./
 
 
  
-# Availble color mpas
 
-![list](list_of_cms.png)
 
 # Guideline for choosing color maps
 
