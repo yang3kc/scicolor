@@ -62,8 +62,31 @@ Below is a screen shot of `scicolor.plot_cmaps()`, which shows all available col
 
 ![list](list_of_cms.png)
 
-# Installation
+# Characteristics of the color maps
 
+See the following table for different characteristics of the color maps.
+You can use the corresponding paramters in `scicolor.list_cmaps()` and `scicolor.plot_cmaps()` to filter the results.
+
+Characteristic         | parameter              | values
+-----------------------|------------------------|-------------
+class                  | `cm_class`             | 'categorical', 'diverging', 'misc', 'multi_sequential', 'sequential'
+type                   | `cm_type`              | 'categorical', 'continuous', 'discrete'
+perceptually uniform   | `perceptually_uniform` | True, None
+color blind friendly   | `color_blind_friendly` | True, None
+
+See the guideline below for more on the class and type.
+
+
+# Guideline for choosing color maps
+
+Figure below contains the guideline for choosing color maps.
+
+![guideline](guideline.png)
+
+The figure was borrowed from [The misuse of colour in science communication](https://doi.org/10.1038/s41467-020-19160-7).
+
+
+# Installation
 ## Installation instruction
 
 The package is not on PyPI.
@@ -84,13 +107,4 @@ pip install -e ./
 - python3
 - matplotlib
 - pandas
-- numpy
-
-
-
- 
-
-
-# Guideline for choosing color maps
-
-![guideline](guideline.png)
+- numpy 
