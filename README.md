@@ -4,4 +4,8 @@ This python package contains a collection of nice color maps for scientific visu
 
 Some color maps are perceptually uniform and/or color blind friendly.
 
+![list](list_of_cms.png)
+
+# Guideline for choosing color maps
+
 ![guideline](guideline.png)
