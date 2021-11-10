@@ -1,8 +1,19 @@
 # Introduction
 
+[![PyPI version](https://badge.fury.io/py/scicolor.svg)](https://badge.fury.io/py/scicolor)
+
 This python package contains a collection of nice color maps for scientific visualizations and provides a convinient and unified way to pick the color maps. Some color maps are perceptually uniform and/or color blind friendly.
 
 # Quick start
+
+### Install
+
+The package is available through pypi.
+You can install it using the following command:
+
+```sh
+pip install scicolor
+```
 
 ### Import the package
 
@@ -20,7 +31,6 @@ scicolor.get_cmap('viridis')
 The returned value can be instances of either `matplotlib.colors.ListedColormap` or `matplotlib.colors.LinearSegmentedColormap`.
 
 You can access the colors of `matplotlib.colors.ListedColormap` instances by `.colors`.
-
 
 ### List available color maps
 
@@ -67,15 +77,14 @@ Below is a screen shot of `scicolor.plot_cmaps()`, which shows all available col
 See the following table for different characteristics of the color maps.
 You can use the corresponding paramters in `scicolor.list_cmaps()` and `scicolor.plot_cmaps()` to filter the results.
 
-Characteristic         | Parameter              | Values
------------------------|------------------------|-------------
-class                  | `cm_class`             | 'categorical', 'diverging', 'misc', 'multi_sequential', 'sequential'
-type                   | `cm_type`              | 'categorical', 'continuous', 'discrete'
-perceptually uniform   | `perceptually_uniform` | True, None
-color blind friendly   | `color_blind_friendly` | True, None
+| Characteristic       | Parameter              | Values                                                               |
+| -------------------- | ---------------------- | -------------------------------------------------------------------- |
+| class                | `cm_class`             | 'categorical', 'diverging', 'misc', 'multi_sequential', 'sequential' |
+| type                 | `cm_type`              | 'categorical', 'continuous', 'discrete'                              |
+| perceptually uniform | `perceptually_uniform` | True, None                                                           |
+| color blind friendly | `color_blind_friendly` | True, None                                                           |
 
 See the guideline below for more on the class and type.
-
 
 # Guideline for choosing color maps
 
@@ -89,13 +98,13 @@ The figure was borrowed from [The misuse of colour in science communication](htt
 
 The color maps come from different sources, see the table below for details
 
-Source                   |  Color maps   | Link
--------------------------|---------------|---------
-matplotlib               |  tab20, tab20b, tab20c, viridis, inferno, cividis | https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
-Scientific colour maps   |  batlow10, batlow25, acton10, acton25, oslo10, oslo25, turku10, turku25, vik10, vik25, roma10, roma25, broc10, broc25, oleron10, oleron25, batlowS, batlow, acton, oslo, turku, vik, roma, broc, oleron | http://www.fabiocrameri.ch/colourmaps.php
-Wes Anderson             |  Royal2, Zissou1, Darjeeling1, FantasticFox1, Moonrise3, Cavalcanti1, GrandBudapest2, IsleofDogs2 | https://github.com/karthik/wesanderson
-CET                      |  glasbey, cwr, isolum | https://peterkovesi.com/projects/colourmaps/
-ocean                    |  topo | https://matplotlib.org/cmocean/
+| Source                 | Color maps                                                                                                                                                                                             | Link                                                         |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| matplotlib             | tab20, tab20b, tab20c, viridis, inferno, cividis                                                                                                                                                       | https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html |
+| Scientific colour maps | batlow10, batlow25, acton10, acton25, oslo10, oslo25, turku10, turku25, vik10, vik25, roma10, roma25, broc10, broc25, oleron10, oleron25, batlowS, batlow, acton, oslo, turku, vik, roma, broc, oleron | http://www.fabiocrameri.ch/colourmaps.php                    |
+| Wes Anderson           | Royal2, Zissou1, Darjeeling1, FantasticFox1, Moonrise3, Cavalcanti1, GrandBudapest2, IsleofDogs2                                                                                                       | https://github.com/karthik/wesanderson                       |
+| CET                    | glasbey, cwr, isolum                                                                                                                                                                                   | https://peterkovesi.com/projects/colourmaps/                 |
+| ocean                  | topo                                                                                                                                                                                                   | https://matplotlib.org/cmocean/                              |
 
 ## Matplotlib
 
@@ -121,6 +130,7 @@ To expand the list:
 2. Add the information to `color_info_list` in `__init__.py`
 
 ## CET
+
 [CET (Centre for Exploration Targeting)](https://peterkovesi.com/projects/colourmaps/) offers many perceptually uniform color maps.
 To expand the list
 
@@ -136,25 +146,9 @@ To expand the list
 1. Download the color data from [github](https://github.com/matplotlib/cmocean/tree/master/cmocean/rgb) to `/path/to/scicolor/scicolor/ocean_colors`
 2. Add the information to `color_info_list` in `__init__.py`
 
-# Installation
-## Installation instruction
-
-The package is not on PyPI.
-In order to use it, please clone or donwload this repo, go the root directory
-
-```
-cd /path/to/scicolor
-```
-
-and use the following command to install the package locally:
-
-```
-pip install -e ./
-```
-
 ## Requirements
 
 - python3
 - matplotlib
 - pandas
-- numpy 
+- numpy
