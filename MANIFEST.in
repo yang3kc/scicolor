@@ -1,0 +1,3 @@
+include scicolor/cet_colors/*.txt
+include scicolor/ocean_colors/*.txt
+include scicolor/scientific_colors/*.txt
