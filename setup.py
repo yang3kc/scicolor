@@ -2,12 +2,13 @@ import setuptools
 from distutils.core import setup
 
 setup(name='scicolor',
-      version='0.1',
+      version='1.0',
       description = 'Collections of color maps for scientific visualizations',
       author = 'Kaicheng Yang',
       author_email = 'yangkc@iu.edu',
       url="https://github.com/yangkcatiu/scicolor",
       license = 'MIT',
+      include_package_data=True,
       install_requires=[
           'matplotlib',
           'numpy',
