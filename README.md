@@ -105,6 +105,8 @@ The color maps come from different sources, see the table below for details
 | Wes Anderson           | Royal2, Zissou1, Darjeeling1, FantasticFox1, Moonrise3, Cavalcanti1, GrandBudapest2, IsleofDogs2                                                                                                       | https://github.com/karthik/wesanderson                       |
 | CET                    | glasbey, cwr, isolum                                                                                                                                                                                   | https://peterkovesi.com/projects/colourmaps/                 |
 | ocean                  | topo                                                                                                                                                                                                   | https://matplotlib.org/cmocean/                              |
+| Met Brewer             | Archambault, Cassatt1, Cassatt2, Demuth, Derain, Egypt, Greek, Hiroshige, Hokusai2, Ingres, Isfahan1, Isfahan2, Java, Johnson, Kandinsky, Morgenstern, OKeeffe1, OKeeffe2, Pillement, Tam, Troy, Veronese  | https://github.com/BlakeRMills/MetBrewer                     |
+
 
 ## Matplotlib
 
@@ -145,6 +147,11 @@ To expand the list
 
 1. Download the color data from [github](https://github.com/matplotlib/cmocean/tree/master/cmocean/rgb) to `/path/to/scicolor/scicolor/ocean_colors`
 2. Add the information to `color_info_list` in `__init__.py`
+
+## MetBrewer
+
+[MetBrewer](https://github.com/BlakeRMills/MetBrewer) provides a series of palettes inspired by works at the Metropolitan Museum of Art in New York.
+Currently the `scicolor` package only includes the color-blind-friendly colors from MetBrewer.
 
 ## Requirements
 
