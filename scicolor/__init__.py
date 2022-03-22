@@ -71,6 +71,28 @@ color_info_list = [
     ["isolum", "cet", "misc", "continuous", True, True],
     ["oleron", "scientific_colors", "multi_sequential", "continuous", True, True],
     ["topo", "ocean", "multi_sequential", "continuous", True, True],
+    ["Archambault", "metbrewer", "categorical", "categorical", False, True],
+    ["Cassatt1", "metbrewer", "diverging", "discrete", False, True],
+    ["Cassatt2", "metbrewer", "multi_sequential", "discrete", False, True],
+    ["Demuth", "metbrewer", "diverging", "discrete", False, True],
+    ["Derain", "metbrewer", "categorical", "categorical", False, True],
+    ["Egypt", "metbrewer", "categorical", "categorical", False, True],
+    ["Greek", "metbrewer", "sequential", "discrete", False, True],
+    ["Hiroshige", "metbrewer", "diverging", "discrete", False, True],
+    ["Hokusai2", "metbrewer", "sequential", "discrete", False, True],
+    ["Ingres", "metbrewer", "multi_sequential", "discrete", False, True],
+    ["Isfahan1", "metbrewer", "diverging", "discrete", False, True],
+    ["Isfahan2", "metbrewer", "categorical", "categorical", False, True],
+    ["Java", "metbrewer", "categorical", "categorical", False, True],
+    ["Johnson", "metbrewer", "categorical", "categorical", False, True],
+    ["Kandinsky", "metbrewer", "categorical", "categorical", False, True],
+    ["Morgenstern", "metbrewer", "diverging", "discrete", False, True],
+    ["OKeeffe1", "metbrewer", "diverging", "discrete", False, True],
+    ["OKeeffe2", "metbrewer", "categorical", "categorical", False, True],
+    ["Pillement", "metbrewer", "sequential", "discrete", False, True],
+    ["Tam", "metbrewer", "sequential", "discrete", False, True],
+    ["Troy", "metbrewer", "diverging", "discrete", False, True],
+    ["Veronese", "metbrewer", "multi_sequential", "discrete", False, True],
 ]
 
 color_info_df = pd.DataFrame(
@@ -151,6 +173,38 @@ def _get_wesanderson_cmap(cm_name):
     return ListedColormap(wes_mapping[cm_name], cm_name)
 
 
+def _get_metbrewer_cmap(cm_name):
+    """
+    Function to load the color maps from MetBrewer
+    """
+    met_mapping = {
+         "Archambault": ["#88a0dc", "#381a61", "#7c4b73", "#ed968c", "#ab3329", "#e78429", "#f9d14a"],
+         "Cassatt1": ["#b1615c", "#d88782", "#e3aba7", "#edd7d9", "#c9c9dd", "#9d9dc7", "#8282aa", "#5a5a83"],
+         "Cassatt2": ["#2d223c", "#574571", "#90719f", "#b695bc", "#dec5da", "#c1d1aa", "#7fa074", "#466c4b", "#2c4b27", "#0e2810"],
+         "Demuth": ["#591c19", "#9b332b", "#b64f32", "#d39a2d", "#f7c267", "#b9b9b8", "#8b8b99", "#5d6174", "#41485f", "#262d42"],
+         "Derain": ["#efc86e", "#97c684", "#6f9969", "#aab5d5", "#808fe1", "#5c66a8", "#454a74"],
+         "Egypt": ["#dd5129", "#0f7ba2", "#43b284", "#fab255"],
+         "Greek": ["#3c0d03", "#8d1c06", "#e67424", "#ed9b49", "#f5c34d"],
+         "Hiroshige": ["#e76254", "#ef8a47", "#f7aa58", "#ffd06f", "#ffe6b7", "#aadce0", "#72bcd5", "#528fad", "#376795", "#1e466e"],
+         "Hokusai2": ["#abc9c8", "#72aeb6", "#4692b0", "#2f70a1", "#134b73", "#0a3351"],
+         "Hokusai3": ["#d8d97a", "#95c36e", "#74c8c3", "#5a97c1", "#295384", "#0a2e57"],
+         "Ingres": ["#041d2c", "#06314e", "#18527e", "#2e77ab", "#d1b252", "#a97f2f", "#7e5522", "#472c0b"],
+         "Isfahan1": ["#4e3910", "#845d29", "#ae8548", "#e3c28b", "#4fb6ca", "#178f92", "#175f5d", "#054544"],
+         "Isfahan2": ["#d7aca1", "#ddc000", "#79ad41", "#34b6c6", "#4063a3"],
+         "Java": ["#663171", "#cf3a36", "#ea7428", "#e2998a", "#0c7156"],
+         "Johnson": ["#a00e00", "#d04e00", "#f6c200", "#0086a8", "#132b69"],
+         "Kandinsky": ["#3b7c70", "#ce9642", "#898e9f", "#3b3a3e"],
+         "Morgenstern": ["#98768e", "#b08ba5", "#c7a2b6", "#dfbbc8", "#ffc680", "#ffb178", "#db8872", "#a56457"],
+         "OKeeffe1": ["#6b200c", "#973d21", "#da6c42", "#ee956a", "#fbc2a9", "#f6f2ee", "#bad6f9", "#7db0ea", "#447fdd", "#225bb2", "#133e7e"],
+         "OKeeffe2": ["#fbe3c2", "#f2c88f", "#ecb27d", "#e69c6b", "#d37750", "#b9563f", "#92351e"],
+         "Pillement": ["#a9845b", "#697852", "#738e8e", "#44636f", "#2b4655", "#0f252f"],
+         "Tam": ["#ffd353", "#ffb242", "#ef8737", "#de4f33", "#bb292c", "#9f2d55", "#62205f", "#341648"],
+         "Troy": ["#421401", "#6c1d0e", "#8b3a2b", "#c27668", "#7ba0b4", "#44728c", "#235070", "#0a2d46"],
+         "VanGogh3": ["#e7e5cc", "#c2d6a4", "#9cc184", "#669d62", "#3c7c3d", "#1f5b25", "#1e3d14", "#192813"],
+         "Veronese": ["#67322e", "#99610a", "#c38f16", "#6e948c", "#2c6b67", "#175449", "#122c43"]
+    }
+    return ListedColormap(met_mapping[cm_name], cm_name)
+
 def get_cmap(cm_name):
     """
     Function to return the specific color map
@@ -172,7 +226,8 @@ def get_cmap(cm_name):
         'scientific_colors': _get_scientific_colors,
         'wesanderson': _get_wesanderson_cmap,
         'cet': _get_cet_cmap,
-        'ocean': _get_ocean_cmap
+        'ocean': _get_ocean_cmap,
+        'metbrewer': _get_metbrewer_cmap
     }[source](cm_name)
     return cm
 
