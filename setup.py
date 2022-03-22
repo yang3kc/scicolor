@@ -2,7 +2,7 @@ import setuptools
 from distutils.core import setup
 
 setup(name='scicolor',
-      version='1.0',
+      version='1.1',
       description = 'Collections of color maps for scientific visualizations',
       author = 'Kaicheng Yang',
       author_email = 'yangkc@iu.edu',
