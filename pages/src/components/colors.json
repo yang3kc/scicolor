@@ -1,0 +1,27 @@
+[
+  {
+    "collection": "tableau",
+    "name": "Tableau 10",
+    "colors": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"]
+  },
+  {
+    "collection": "tableau",
+    "name": "Tableau 10 Medium",
+    "colors": ["#729ece", "#ff9e4a", "#67bf5c", "#ed665d", "#ad8bc9", "#a8786e", "#ed97ca", "#a2a2a2", "#cdcc5d", "#6dccda"]
+  },
+  {
+    "collection": "tableau",
+    "name": "Tableau 10 Light",
+    "colors": ["#aec7e8", "#ffbb78", "#98df8a", "#ff9896", "#c5b0d5", "#c49c94", "#f7b6d2", "#c7c7c7", "#dbdb8d", "#9edae5"]
+  },
+  {
+    "collection": "tableau",
+    "name": "Color Blind 10",
+    "colors": ["#006ba4", "#ff800e", "#ababab", "#595959", "#5f9ed1", "#c85200", "#898989", "#a2c8ec", "#ffbc79", "#cfcfcf"]
+  },
+  {
+    "collection": "Wes Anderson",
+    "name": "Royal2",
+    "colors": ["#9A8822", "#F5CDB4", "#F8AFA8", "#FDDDA0", "#74A089"]
+  }
+]
