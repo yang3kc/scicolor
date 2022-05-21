@@ -2,121 +2,91 @@
   {
     "collection": "tableau",
     "name": "Tableau 10",
-    "perceptually_uniform": false,
-    "color_blind_friendly": false,
     "labels": ["categorical"],
     "colors": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"]
   },
   {
     "collection": "tableau",
     "name": "Tableau 10 Medium",
-    "perceptually_uniform": false,
-    "color_blind_friendly": false,
     "labels": ["categorical"],
     "colors": ["#729ece", "#ff9e4a", "#67bf5c", "#ed665d", "#ad8bc9", "#a8786e", "#ed97ca", "#a2a2a2", "#cdcc5d", "#6dccda"]
   },
   {
     "collection": "tableau",
     "name": "Tableau 10 Light",
-    "perceptually_uniform": false,
-    "color_blind_friendly": false,
     "labels": ["categorical"],
     "colors": ["#aec7e8", "#ffbb78", "#98df8a", "#ff9896", "#c5b0d5", "#c49c94", "#f7b6d2", "#c7c7c7", "#dbdb8d", "#9edae5"]
   },
   {
     "collection": "tableau",
     "name": "Color Blind 10",
-    "perceptually_uniform": false,
-    "color_blind_friendly": true,
-    "labels": ["categorical"],
+    "labels": ["categorical", "color_blind_friendly"],
     "colors": ["#006ba4", "#ff800e", "#ababab", "#595959", "#5f9ed1", "#c85200", "#898989", "#a2c8ec", "#ffbc79", "#cfcfcf"]
   },
   {
     "collection": "Wes Anderson",
     "name": "Royal2",
-    "perceptually_uniform": false,
-    "color_blind_friendly": false,
     "labels": ["categorical"],
     "colors": ["#9A8822", "#F5CDB4", "#F8AFA8", "#FDDDA0", "#74A089"]
   },
   {
     "collection": "Wes Anderson",
     "name": "Moonrise3",
-    "perceptually_uniform": false,
-    "color_blind_friendly": false,
     "labels": ["categorical"],
     "colors": ["#85D4E3", "#F4B5BD", "#9C964A", "#CDC08C", "#FAD77B"]
   },
   {
     "collection": "Wes Anderson",
     "name": "GrandBudapest2",
-    "perceptually_uniform": false,
-    "color_blind_friendly": false,
     "labels": ["categorical"],
     "colors": ["#E6A0C4", "#C6CDF7", "#D8A499", "#7294D4"]
   },
   {
     "collection": "Wes Anderson",
     "name": "IsleofDogs2",
-    "perceptually_uniform": false,
-    "color_blind_friendly": false,
     "labels": ["categorical"],
     "colors": ["#EAD3BF", "#AA9486", "#B6854D", "#39312F", "#1C1718"]
   },
   {
     "collection": "MetBrewer",
     "name": "Cassatt1",
-    "perceptually_uniform": false,
-    "color_blind_friendly": true,
-    "labels": ["discrete", "diverging"],
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
     "colors": ["#b1615c", "#d88782", "#e3aba7", "#edd7d9", "#c9c9dd", "#9d9dc7", "#8282aa", "#5a5a83"]
   },
   {
     "collection": "MetBrewer",
     "name": "Hiroshige",
-    "perceptually_uniform": false,
-    "color_blind_friendly": true,
-    "labels": ["discrete", "diverging"],
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
     "colors": ["#e76254", "#ef8a47", "#f7aa58", "#ffd06f", "#ffe6b7", "#aadce0", "#72bcd5", "#528fad", "#376795", "#1e466e"]
   },
   {
     "collection": "MetBrewer",
     "name": "Hokusai2",
-    "perceptually_uniform": false,
-    "color_blind_friendly": true,
-    "labels": ["discrete", "sequential"],
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
     "colors": ["#abc9c8", "#72aeb6", "#4692b0", "#2f70a1", "#134b73", "#0a3351"]
   },
   {
     "collection": "MetBrewer",
     "name": "Isfahan2",
-    "perceptually_uniform": false,
-    "color_blind_friendly": true,
-    "labels": ["categorical"],
+    "labels": ["categorical", "color_blind_friendly"],
     "colors": ["#d7aca1", "#ddc000", "#79ad41", "#34b6c6", "#4063a3"]
   },
   {
     "collection": "MetBrewer",
     "name": "Johnson",
-    "perceptually_uniform": false,
-    "color_blind_friendly": true,
-    "labels": ["categorical"],
+    "labels": ["categorical", "color_blind_friendly"],
     "colors": ["#a00e00", "#d04e00", "#f6c200", "#0086a8", "#132b69"]
   },
   {
     "collection": "MetBrewer",
     "name": "Kandinsky",
-    "perceptually_uniform": false,
-    "color_blind_friendly": true,
-    "labels": ["categorical"],
+    "labels": ["categorical", "color_blind_friendly"],
     "colors": ["#3b7c70", "#ce9642", "#898e9f", "#3b3a3e"]
   },
   {
     "collection": "MetBrewer",
     "name": "OKeeffe1",
-    "perceptually_uniform": false,
-    "color_blind_friendly": true,
-    "labels": ["discrete", "diverging"],
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
     "colors": ["#6b200c", "#973d21", "#da6c42", "#ee956a", "#fbc2a9", "#f6f2ee", "#bad6f9", "#7db0ea", "#447fdd", "#225bb2", "#133e7e"]
   }
 ]
