@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="mb-3">Color Picker</h1>
+    <h1 class="mb-3">Scicolor Color Picker</h1>
     <div class="mb-5">
         <b-form-group class="mb-3">
           <b-form-checkbox-group
@@ -16,8 +16,8 @@
             <b-form-checkbox value="sequential">Sequential</b-form-checkbox>
           </b-form-checkbox-group>
       </b-form-group>
-      <b-button @click="restoreColorList()" class="mx-1">Restore</b-button>
-      <b-button @click="shuffleColorList()" class="mx-1">Shuffle</b-button>
+      <b-button @click="restoreColorList()" class="mx-1" variant="outline-dark">Restore</b-button>
+      <b-button @click="shuffleColorList()" class="mx-1" variant="outline-secondary">Shuffle</b-button>
     </div>
     <div>
       <b-row v-for="(row, row_index) in colorsToShowChunks" :key="row_index">
