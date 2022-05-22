@@ -202,5 +202,41 @@
     "name": "jupiter",
     "labels": ["categorical"],
     "colors": ["#c03a53", "#edd09e", "#aab5af", "#023629", "#eba735", "#8e9380", "#6c4127"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "batlow 10",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#011959", "#103F60", "#1C5A62", "#3C6D56", "#687B3E", "#9D892B", "#D29343", "#F8A17B", "#FDB7BC", "#FACCFA"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "acton 10",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#2E214D", "#4B3B66", "#6E5480", "#926390", "#B26795", "#D17BA5", "#D495B8", "#D4ADC9", "#DBC9DC", "#E6E6F0"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "oslo 10",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#010101", "#0D1B29", "#133251", "#1F4C7B", "#3869A8", "#658AC7", "#89A0CA", "#AAB6CA", "#D4D6DB", "#FFFFFF"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "vik 10",
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
+    "colors": ["#001261", "#033E7D", "#1E6F9D", "#71A8C4", "#C9DDE7", "#EACEBD", "#D39774", "#BE6533", "#8B2706", "#590008"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "broc 10",
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
+    "colors": ["#2C1A4C", "#284477", "#4B76A0", "#8BA7C2", "#CED9E5", "#E8E8D2", "#C5C58F", "#8D8D56", "#555527", "#262600"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "oleron 10",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#1A2659", "#455285", "#7784B7", "#AAB7E8", "#D3E0FA", "#3C5600", "#7A711F", "#B79A5E", "#F1CEA4", "#FDFDE6"]
   }
 ]

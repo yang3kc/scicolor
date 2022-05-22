@@ -44,6 +44,7 @@
           <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm" target="_blank">Tableau</a>,
           <a href="https://github.com/karthik/wesanderson" target="_blank">Wes Anderson Palettes</a>,
           <a href="https://github.com/kgolid/chromotome" target="_blank">Chromotome</a>,
+          <a href="https://www.fabiocrameri.ch/colourmaps/" target="_blank">Scientific colour maps</a>,
           and <a href="https://github.com/BlakeRMills/MetBrewer" target="_blank">MetBrewer</a>.
         </p>
         <p>
