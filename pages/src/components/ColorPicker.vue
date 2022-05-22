@@ -17,6 +17,7 @@
             <b-form-checkbox value="discrete">Discrete</b-form-checkbox>
             <b-form-checkbox value="diverging">Diverging</b-form-checkbox>
             <b-form-checkbox value="sequential">Sequential</b-form-checkbox>
+            <b-form-select v-model="collectionSelected" :options="collectionNames" @change="filterColorList"></b-form-select>
           </b-form-checkbox-group>
       </b-form-group>
       <b-button @click="shuffleColorList()" class="mx-1" variant="outline-secondary">Shuffle</b-button>
@@ -76,13 +77,28 @@ export default {
     return {
       colorsJson: colorsJson,
       colorList: colorsJson.slice(),
-      filterSelected: []
+      filterSelected: [],
+      collectionSelected: null
     }
   },
   computed: {
     colorsToShowChunks: function () {
       // console.log(this.sliceIntoChunks(this.colorsJson, 3));
       return this.sliceIntoChunks(this.colorList, 3);
+    },
+    collectionNames: function () {
+      var tempCollectionNames = [];
+      tempCollectionNames.push({
+        value: null, text: 'Select a collection'
+      });
+      var uniqueCollections = new Set(this.colorsJson.map(x => x["collection"]));
+      for(let collection of uniqueCollections){
+        tempCollectionNames.push({
+          value: collection,
+          text: collection
+        })
+      }
+      return tempCollectionNames;
     },
   },
   methods: {
@@ -105,18 +121,22 @@ export default {
     restoreColorList: function () {
       this.colorList = this.colorsJson.slice();
       this.filterSelected = [];
+      this.collectionSelected = null;
     },
     shuffleColorList: function () {
       this.colorList = this.colorList.sort(() => Math.random() - 0.5);
     },
     filterColorList: function () {
       console.log(this.filterSelected);
+      console.log(this.collectionSelected);
       var filterSet = new Set(this.filterSelected);
       var newColorList = [];
       for(let color of this.colorsJson){
-        var colorLabels = new Set(color["labels"]);
-        if(this.isSuperset(colorLabels, filterSet)){
-          newColorList.push(color);
+        if(this.collectionSelected === null || this.collectionSelected === color["collection"]){
+          var colorLabels = new Set(color["labels"]);
+          if(this.isSuperset(colorLabels, filterSet)){
+            newColorList.push(color);
+          }
         }
       }
       this.colorList = newColorList;
