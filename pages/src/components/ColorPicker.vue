@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="mb-3">Scicolor Color Picker</h1>
-    <div class="mb-5">
+    <div class="mb-3">
         <b-form-group class="mb-3">
           <b-form-checkbox-group
             v-model="filterSelected"
@@ -9,15 +9,18 @@
             plain
             @change="filterColorList"
           >
-            <b-form-checkbox value="color_blind_friendly" inline>Color blind friendly</b-form-checkbox>
+            <b-form-checkbox value="color_blind_friendly" inline>Color-blind-friendly</b-form-checkbox>
             <b-form-checkbox value="categorical" inline>Categorical</b-form-checkbox>
             <b-form-checkbox value="discrete">Discrete</b-form-checkbox>
             <b-form-checkbox value="diverging">Diverging</b-form-checkbox>
             <b-form-checkbox value="sequential">Sequential</b-form-checkbox>
           </b-form-checkbox-group>
       </b-form-group>
-      <b-button @click="restoreColorList()" class="mx-1" variant="outline-dark">Restore</b-button>
       <b-button @click="shuffleColorList()" class="mx-1" variant="outline-secondary">Shuffle</b-button>
+      <b-button @click="restoreColorList()" class="mx-1" variant="outline-dark">Restore</b-button>
+    </div>
+    <div>
+      <p>Click the color block to copy the color code</p>
     </div>
     <div>
       <b-row v-for="(row, row_index) in colorsToShowChunks" :key="row_index">
