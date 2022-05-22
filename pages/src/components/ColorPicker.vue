@@ -31,12 +31,12 @@
           Click the color block to copy the color code.
           Click the "Shuffle" button to shuffle the color list.
           Click the "Restore" button to restore to the default view.
-          Use the check boxes to filter the colors.
+          Use the checkboxes to filter the colors.
         </p>
         <h3>About</h3>
         <p>
           This is <a href="https://www.kaichengyang.me" target="_blank"> Kevin</a>'s collection of colors for scientific visualizations.
-          Currently, only discrete and categorical colors are included.
+          Currently, only discrete and categorical color schemes are included.
           For continuous schemes, check out the Python package <a href="https://pypi.org/project/scicolor/"><code>scicolor</code></a>.
         </p>
         <p>
