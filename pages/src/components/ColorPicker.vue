@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <h1 class="mb-3">Scicolor Color Picker</h1>
+    <h1 class="mb-3" v-b-toggle.sidebar>
+      Scicolor Color Picker
+      <b-icon icon="info-circle" class="h4 ml-2" variant="secondary"></b-icon>
+    </h1>
     <div class="mb-3">
         <b-form-group class="mb-3">
           <b-form-checkbox-group
@@ -20,7 +23,34 @@
       <b-button @click="restoreColorList()" class="mx-1" variant="outline-dark">Restore</b-button>
     </div>
     <div>
-      <p>Click the color block to copy the color code</p>
+      <b-sidebar id="sidebar" width="500px" title="" shadow right>
+        <div class="mx-3 my-3">
+        <h3>Tips</h3>
+        <p>
+          Click the color block to copy the color code.
+          Click the "Shuffle" button to shuffle the color list.
+          Click the "Restore" button to restore to the default view.
+          Use the check boxes to filter the colors.
+        </p>
+        <h3>About</h3>
+        <p>
+          This is <a href="https://www.kaichengyang.me" target="_blank"> Kevin</a>'s collection of colors for scientific visualizations.
+          Currently, only discrete and categorical colors are included.
+          For continuous schemes, check out the Python package <a href="https://pypi.org/project/scicolor/"><code>scicolor</code></a>.
+        </p>
+        <p>
+          Colors listed come form
+          <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm" target="_blank">Tableau</a>,
+          <a href="https://github.com/karthik/wesanderson" target="_blank">Wes Anderson Palettes</a>,
+          and <a href="https://github.com/BlakeRMills/MetBrewer" target="_blank">MetBrewer</a>.
+        </p>
+        <p>
+          <a href="https://github.com/yangkcatiu/scicolor" target="_blank">
+            <b-icon icon="github" class="h1 ml-2" variant="secondary"></b-icon>
+          </a>
+        </p>
+        </div>
+      </b-sidebar>
     </div>
     <div>
       <b-row v-for="(row, row_index) in colorsToShowChunks" :key="row_index">
