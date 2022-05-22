@@ -88,5 +88,119 @@
     "name": "OKeeffe1",
     "labels": ["discrete", "diverging", "color_blind_friendly"],
     "colors": ["#6b200c", "#973d21", "#da6c42", "#ee956a", "#fbc2a9", "#f6f2ee", "#bad6f9", "#7db0ea", "#447fdd", "#225bb2", "#133e7e"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "iiso_zeitung",
+    "labels": ["categorical"],
+    "colors": ["#ee8067", "#f3df76", "#00a9c0", "#f7ab76"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "iiso_daily",
+    "labels": ["categorical"],
+    "colors": ["#e76c4a", "#f0d967", "#7f8cb6", "#1daeb1", "#ef9640"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "rag-mysore",
+    "labels": ["categorical"],
+    "colors": ["#ec6c26", "#613a53", "#e8ac52", "#639aa0"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "rag-gol",
+    "labels": ["categorical"],
+    "colors": ["#d3693e", "#803528", "#f1b156", "#90a798"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "rag-virupaksha",
+    "labels": ["categorical"],
+    "colors": ["#f5736a", "#925951", "#feba4c", "#9d9b9d"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "retro",
+    "labels": ["categorical"],
+    "colors": [ "#69766f", "#9ed6cb", "#f7e5cc", "#9d8f7f", "#936454", "#bf5c32", "#efad57" ]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "retro-washedout",
+    "labels": ["categorical"],
+    "colors": [ "#878a87", "#cbdbc8", "#e8e0d4", "#b29e91", "#9f736c", "#b76254", "#dfa372" ]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "system.#05",
+    "labels": ["categorical"],
+    "colors": ["#db4549", "#d1e1e1", "#3e6a90", "#2e3853", "#a3c9d3"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "tundra1",
+    "labels": ["categorical"],
+    "colors": ["#40708c", "#8e998c", "#5d3f37", "#ed6954", "#f2e9e2"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "cc245",
+    "labels": ["categorical"],
+    "colors": ["#0d4a4e", "#ff947b", "#ead3a2", "#5284ab"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "ducci_e",
+    "labels": ["categorical"],
+    "colors": ["#c37c2b", "#f6ecce", "#000000", "#386a7a"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "ducci_f",
+    "labels": ["categorical"],
+    "colors": ["#596f7e", "#eae6c7", "#463c21", "#f4cb4c"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "hilda01",
+    "labels": ["categorical"],
+    "colors": ["#ec5526", "#f4ac12", "#9ebbc1", "#f7f4e2"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "hilda02",
+    "labels": ["categorical"],
+    "colors": ["#eb5627", "#eebb20", "#4e9eb8", "#f7f5d0"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "byrnes",
+    "labels": ["categorical"],
+    "colors": ["#c54514", "#dca215", "#23507f"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "kaffeprat",
+    "labels": ["categorical"],
+    "colors": ["#BCAA8C", "#D8CDBE", "#484A42", "#746B58", "#9A8C73"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "hurdles",
+    "labels": ["categorical"],
+    "colors": ["#e16503", "#dc9a0f", "#dfe2b4", "#66a7a6"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "tsu_akasaka",
+    "labels": ["categorical"],
+    "colors": ["#687f72", "#cc7d6c", "#dec36f", "#dec7af", "#ad8470", "#424637"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "jupiter",
+    "labels": ["categorical"],
+    "colors": ["#c03a53", "#edd09e", "#aab5af", "#023629", "#eba735", "#8e9380", "#6c4127"]
   }
 ]
