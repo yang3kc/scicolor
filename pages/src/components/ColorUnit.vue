@@ -10,7 +10,15 @@
     ></span>
   </div>
   <div>
-    <p>{{ colorData.collection }} - {{ colorData.name }}</p>
+    <p>
+      {{ colorData.collection }} - {{ colorData.name }}
+      <b-icon
+      icon="files"
+      class="ml-5"
+      @click="copy(colorList)"
+       v-b-tooltip.hover.v-secondary :title="colorList"
+      ></b-icon>
+    </p>
   </div>
 </div>
 </template>
@@ -31,9 +39,12 @@ export default {
   methods: {
     async copy(s) {
       await navigator.clipboard.writeText(s);
-    },
+    }
   },
   computed: {
+    colorList: function () {
+      return JSON.stringify(this.colorData.colors, null, " ");
+    },
     colorWidth: function () {
       return (this.totalWidth / this.colorData.colors.length).toString() + "px";
     }

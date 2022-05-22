@@ -27,13 +27,12 @@
       <b-sidebar id="sidebar" width="500px" title="" shadow right>
         <div class="mx-3 my-3">
         <h3>Tips</h3>
-        <p>
-          Click the color block to copy the color code.
-          Click the "Shuffle" button to shuffle the color list.
-          Click the "Restore" button to restore to the default view.
-          Use the checkboxes to filter the colors.
-        </p>
-        <h3>About</h3>
+        <p class="mb-0">Click color block to copy the color code.</p>
+        <p class="mb-0">Click <b-icon icon="files"></b-icon> to copy the whole list.</p>
+        <p class="mb-0">Click "Shuffle" button to shuffle the color list.</p>
+        <p class="mb-0">Click "Restore" button to restore to the default view.</p>
+        <p class="mb-0">Use checkboxes to filter the colors.</p>
+        <h3 class="mt-5">About</h3>
         <p>
           This is <a href="https://www.kaichengyang.me" target="_blank"> Kevin</a>'s collection of colors for scientific visualizations.
           Currently, only discrete and categorical color schemes are included.
