@@ -204,6 +204,18 @@
     "colors": ["#c03a53", "#edd09e", "#aab5af", "#023629", "#eba735", "#8e9380", "#6c4127"]
   },
   {
+    "collection": "Chromotome",
+    "name": "dt07",
+    "labels": ["categorical"],
+    "colors": ["#6a98a5", "#d24c18"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "delphi",
+    "labels": ["categorical"],
+    "colors": ["#475b62", "#7a999c", "#2a1f1d", "#fbaf3c", "#df4a33", "#f0e0c6", "#af592c"]
+  },
+  {
     "collection": "Scientific colour",
     "name": "batlow 10",
     "labels": ["discrete", "sequential", "color_blind_friendly"],
