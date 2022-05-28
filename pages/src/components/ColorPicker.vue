@@ -17,8 +17,11 @@
             <b-form-checkbox value="discrete">Discrete</b-form-checkbox>
             <b-form-checkbox value="diverging">Diverging</b-form-checkbox>
             <b-form-checkbox value="sequential">Sequential</b-form-checkbox>
-            <b-form-select v-model="collectionSelected" :options="collectionNames" @change="filterColorList"></b-form-select>
           </b-form-checkbox-group>
+            <b-form-select class="mx-4" v-model="collectionSelected" :options="collectionNames" @change="filterColorList"></b-form-select>
+            <label for="sb-inline">With at least</label>
+            <b-form-spinbutton id="sb-inline" class="mx-2" v-model="colorCnt" size="sm" inline @change="filterColorList"></b-form-spinbutton>
+            <label for="sb-inline">colors</label>
       </b-form-group>
       <b-button @click="shuffleColorList()" class="mx-1" variant="outline-secondary">Shuffle</b-button>
       <b-button @click="restoreColorList()" class="mx-1" variant="outline-dark">Restore</b-button>
@@ -79,7 +82,8 @@ export default {
       colorsJson: colorsJson,
       colorList: colorsJson.slice(),
       filterSelected: [],
-      collectionSelected: null
+      collectionSelected: null,
+      colorCnt: 0
     }
   },
   computed: {
@@ -136,6 +140,7 @@ export default {
         if(this.collectionSelected !== null && this.collectionSelected !== color["collection"]){continue;}
         var colorLabels = new Set(color["labels"]);
         if(!this.isSuperset(colorLabels, filterSet)){continue;}
+        if(color["colors"].length < this.colorCnt){continue;}
         newColorList.push(color);
       }
       this.colorList = newColorList;
