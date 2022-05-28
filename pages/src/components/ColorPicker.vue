@@ -133,12 +133,10 @@ export default {
       var filterSet = new Set(this.filterSelected);
       var newColorList = [];
       for(let color of this.colorsJson){
-        if(this.collectionSelected === null || this.collectionSelected === color["collection"]){
-          var colorLabels = new Set(color["labels"]);
-          if(this.isSuperset(colorLabels, filterSet)){
-            newColorList.push(color);
-          }
-        }
+        if(this.collectionSelected !== null && this.collectionSelected !== color["collection"]){continue;}
+        var colorLabels = new Set(color["labels"]);
+        if(!this.isSuperset(colorLabels, filterSet)){continue;}
+        newColorList.push(color);
       }
       this.colorList = newColorList;
     }
