@@ -24,6 +24,12 @@
     "colors": ["#006ba4", "#ff800e", "#ababab", "#595959", "#5f9ed1", "#c85200", "#898989", "#a2c8ec", "#ffbc79", "#cfcfcf"]
   },
   {
+    "collection": "RPTH",
+    "name": "RPTH palette",
+    "labels": ["categorical", "color_blind_friendly"],
+    "colors": ["#003366", "#E31B23", "#005CAB", "#DCEEF3", "#FFC325", "#E6F1EE"]
+  },
+  {
     "collection": "Wes Anderson",
     "name": "Royal2",
     "labels": ["categorical"],
