@@ -26,6 +26,7 @@
       <b-button @click="shuffleColorList()" class="mx-1" variant="outline-secondary">Shuffle</b-button>
       <b-button @click="restoreColorList()" class="mx-1" variant="outline-dark">Restore</b-button>
     </div>
+    <div class="mb-3">Click color block to copy the color code. Click <b-icon icon="files"></b-icon> to copy the whole list.</div>
     <div>
       <b-sidebar id="sidebar" width="500px" title="" shadow right>
         <div class="mx-3 my-3">
