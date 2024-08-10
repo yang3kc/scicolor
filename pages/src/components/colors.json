@@ -30,6 +30,24 @@
     "colors": ["#003366", "#E31B23", "#005CAB", "#DCEEF3", "#FFC325", "#E6F1EE"]
   },
   {
+    "collection": "Nord",
+    "name": "Polar Night / Snow Storm",
+    "labels": ["categorical"],
+    "colors": ["#2E3440", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#E5E9F0", "#ECEFF4"]
+  },
+  {
+    "collection": "Nord",
+    "name": "Frost",
+    "labels": ["categorical"],
+    "colors": ["#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC"]
+  },
+  {
+    "collection": "Nord",
+    "name": "Aurora",
+    "labels": ["categorical"],
+    "colors": ["#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD"]
+  },
+  {
     "collection": "Wes Anderson",
     "name": "Royal2",
     "labels": ["categorical"],
