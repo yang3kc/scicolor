@@ -54,6 +54,30 @@
     "colors": ["#469990", "#DCBEFF", "#9A6324", "#FFFAC8", "#800000", "#AAFFC3", "#808000", "#FFD8B1", "#000075", "#A9A9A9"]
   },
   {
+    "collection": "Gruvbox",
+    "name": "Light",
+    "labels": ["categorical"],
+    "colors": ["#FB4934", "#83A598", "#FABD2F", "#FE8019", "#D3869B", "#8EC07C", "#B8BB26"]
+  },
+  {
+    "collection": "Gruvbox",
+    "name": "Medium",
+    "labels": ["categorical"],
+    "colors": ["#CC241D", "#458588", "#D79921", "#D65d0E", "#B16286", "#689D6A", "#98971A" ]
+  },
+  {
+    "collection": "Gruvbox",
+    "name": "Dark",
+    "labels": ["categorical"],
+    "colors": ["#9D0006", "#076678", "#B57614", "#D65D0E", "#8F3F71", "#427B58", "#79740E"]
+  },
+  {
+    "collection": "Gruvbox",
+    "name": "Context",
+    "labels": ["discrete", "sequential"],
+    "colors": ["#1D2021", "#282828", "#3C3836", "#594945", "#665C54", "#7C6F64", "#928374", "#A89984", "#BDAE93", "#D5C4A1", "#EBDBB2", "#FBF1C7", "#F9F5D7"]
+  },
+  {
     "collection": "RPTH",
     "name": "RPTH palette",
     "labels": ["categorical", "color_blind_friendly"],
