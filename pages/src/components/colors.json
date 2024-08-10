@@ -24,12 +24,6 @@
     "colors": ["#006ba4", "#ff800e", "#ababab", "#595959", "#5f9ed1", "#c85200", "#898989", "#a2c8ec", "#ffbc79", "#cfcfcf"]
   },
   {
-    "collection": "RPTH",
-    "name": "RPTH palette",
-    "labels": ["categorical", "color_blind_friendly"],
-    "colors": ["#003366", "#E31B23", "#005CAB", "#DCEEF3", "#FFC325", "#E6F1EE"]
-  },
-  {
     "collection": "Nord",
     "name": "Polar Night / Snow Storm",
     "labels": ["categorical"],
@@ -46,6 +40,24 @@
     "name": "Aurora",
     "labels": ["categorical"],
     "colors": ["#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD"]
+  },
+  {
+    "collection": "Trubetskoy",
+    "name": "20-colors-1",
+    "labels": ["categorical"],
+    "colors": ["#E6194B", "#3CB44E", "#FFE119", "#4363D8", "#F58231", "#911EB4", "#42D4F4", "#F032E6", "#BFEF45", "#FABED4"]
+  },
+  {
+    "collection": "Trubetskoy",
+    "name": "20-colors-2",
+    "labels": ["categorical"],
+    "colors": ["#469990", "#DCBEFF", "#9A6324", "#FFFAC8", "#800000", "#AAFFC3", "#808000", "#FFD8B1", "#000075", "#A9A9A9"]
+  },
+  {
+    "collection": "RPTH",
+    "name": "RPTH palette",
+    "labels": ["categorical", "color_blind_friendly"],
+    "colors": ["#003366", "#E31B23", "#005CAB", "#DCEEF3", "#FFC325", "#E6F1EE"]
   },
   {
     "collection": "Wes Anderson",

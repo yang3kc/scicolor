@@ -50,6 +50,7 @@
           <a href="https://www.rpthjournal.org/article/S2475-0379(22)01983-5/pdf" target="_blank">RPTH Palette</a>,
           <a href="https://github.com/kgolid/chromotome" target="_blank">Chromotome</a>,
           <a href="https://www.fabiocrameri.ch/colourmaps/" target="_blank">Scientific colour maps</a>,
+          <a href="https://sashamaps.net/docs/resources/20-colors/" target="_blank">Trubetskoy 20-colors</a>,
           and <a href="https://github.com/BlakeRMills/MetBrewer" target="_blank">MetBrewer</a>.
         </p>
         <p>
