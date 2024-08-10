@@ -4,7 +4,7 @@
 
 This python package contains a collection of nice color maps for scientific visualizations and provides a convinient and unified way to pick the color maps. Some color maps are perceptually uniform and/or color blind friendly.
 
-You can also check out the [Scicolor Color Picker](https://yangkcatiu.github.io/scicolor/), a web app for browsing and picking colors.
+You can also check out the [Scicolor Color Picker](https://yang3kc.github.io/scicolor/), a web app for browsing and picking colors.
 
 # Quick start
 
