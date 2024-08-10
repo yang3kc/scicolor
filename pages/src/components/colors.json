@@ -26,7 +26,7 @@
   {
     "collection": "Nord",
     "name": "Polar Night / Snow Storm",
-    "labels": ["categorical"],
+    "labels": ["discrete", "sequential"],
     "colors": ["#2E3440", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#E5E9F0", "#ECEFF4"]
   },
   {
