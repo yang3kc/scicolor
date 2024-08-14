@@ -33,17 +33,29 @@ const copy_all_color_codes = () => {
           <div class="card-body">
             <p class="prose font-mono font-bold text-center" @click="copy_color_code(color)">{{ color }}</p>
             <div class="h-[40px]" :style="{'background-color': color}" @click="copy_color_code(color)"></div>
-            <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">Copy color code</div>
-            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.remove_color(color_index)">Remove color</div>
-            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.move_color_left(color_index)">Move left</div>
-            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.move_color_right(color_index)">Move right</div>
+            <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">
+              <font-awesome-icon :icon="['far', 'copy']" />
+              Copy color code</div>
+            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.remove_color(color_index)">
+              <font-awesome-icon :icon="['far', 'trash-can']" />
+              Remove color</div>
+            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.move_color_left(color_index)">
+              <font-awesome-icon :icon="['far', 'circle-left']" />
+              Move left</div>
+            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.move_color_right(color_index)">
+              <font-awesome-icon :icon="['far', 'circle-right']" />
+              Move right</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-4">
-      <div role="button" class="btn btn-outline btn-ghost" @click="color_swatch_store.remove_all_colors()">Remove all colors</div>
-      <div role="button" class="btn btn-outline btn-ghost" @click="copy_all_color_codes">Copy all color codes</div>
+    <div class="flex max-md:flex-col md:justify-center items-center">
+      <div role="button" class="btn btn-sm btn-outline btn-ghost mr-2 mt-2" @click="color_swatch_store.remove_all_colors()">
+        <font-awesome-icon :icon="['far', 'trash-can']" />
+        Remove all colors</div>
+      <div role="button" class="btn btn-sm btn-outline btn-ghost mt-2" @click="copy_all_color_codes">
+        <font-awesome-icon :icon="['far', 'copy']" />
+        Copy all color codes</div>
     </div>
     <Toast ref="toast_func"/>
   </div>

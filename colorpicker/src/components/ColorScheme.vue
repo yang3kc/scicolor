@@ -23,6 +23,12 @@ const copy_color_code = (color) => {
     navigator.clipboard.writeText(color);
     toast_func.value.showToast(`Color ${color} copied to clipboard!`, color);
 }
+
+const copy_color_codes = (color_codes) => {
+    const color_codes_string = JSON.stringify(color_codes, null, 2);
+    navigator.clipboard.writeText(color_codes_string  );
+    toast_func.value.showToast(`All color codes copied to clipboard!`, "#1f77b4");
+}
 </script>
 
 <template>
@@ -35,18 +41,22 @@ const copy_color_code = (color) => {
         role="button"
         tabindex="0"
         >
-        <div tabindex="0" class="card compact dropdown-content z-[1] bg-base-100 shadow w-[200px]">
+        <div tabindex="0" class="card compact dropdown-content z-[1] bg-base-100 shadow w-[230px]">
           <div class="card-body">
             <p class="prose font-mono font-bold text-center" @click="copy_color_code(color)">{{ color }}</p>
             <div class="h-[40px]" :style="{'background-color': color}" @click="copy_color_code(color)"></div>
-            <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">Copy color code</div>
-            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.add_color(color)">Add to color swatch</div>
+            <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">
+              <font-awesome-icon :icon="['far', 'copy']" />
+              Copy color code</div>
+            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.add_color(color)">
+              <font-awesome-icon :icon="['far', 'square-plus']" />
+              Add to color swatch</div>
           </div>
         </div>
       </div>
     </div>
     <div class="flex justify-center">
-      <p class="prose mt-1"><a class="link" :href="color_collection_source.url" target="_blank">{{ color_collection_source.name }}</a> - {{ color_scheme.name }}</p>
+      <p class="prose mt-1"><a class="link" :href="color_collection_source.url" target="_blank">{{ color_collection_source.name }}</a> - {{ color_scheme.name }} <font-awesome-icon :icon="['far', 'copy']" @click="copy_color_codes(color_scheme.colors)" class="hover:text-primary hover:text-lg" /></p>
     </div>
     <Toast ref="toast_func"/>
   </div>
