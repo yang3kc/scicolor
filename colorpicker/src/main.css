@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link {
+    @apply underline;
+    @apply text-gray-500;
+    @apply hover:text-gray-700;
+    @apply hover:decoration-2;
+}
