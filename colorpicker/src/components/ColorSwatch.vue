@@ -31,8 +31,9 @@ const copy_all_color_codes = () => {
         >
         <div tabindex="0" class="card compact dropdown-content z-[1] bg-base-100 shadow w-[200px]">
           <div class="card-body">
-            <p class="prose font-mono font-bold text-center" @click="copy_color_code(color)">{{ color }}</p>
-            <div class="h-[40px]" :style="{'background-color': color}" @click="copy_color_code(color)"></div>
+            <div class="h-[36px]" :style="{'background-color': color}" @click="copy_color_code(color)">
+              <p class="prose font-mono font-bold text-center mt-1" @click="copy_color_code(color)">{{ color }}</p>
+            </div>
             <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">
               <font-awesome-icon :icon="['far', 'copy']" />
               Copy color code</div>
