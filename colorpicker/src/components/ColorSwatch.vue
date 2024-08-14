@@ -2,19 +2,10 @@
 import { ref } from 'vue';
 import Toast from '@/components/Toast.vue';
 
-// props
-const props = defineProps({
-    color_collection_source: {
-        type: Object,
-        required: true
-    },
-    color_scheme: {
-        type: Object,
-        required: true
-    }
-});
-
 // data
+const colors = ref([
+    "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"
+]);
 const toast_func = ref(null);
 
 // methods
@@ -22,12 +13,13 @@ const copy_color_code = (color) => {
     navigator.clipboard.writeText(color);
     toast_func.value.showToast(`Color ${color} copied to clipboard!`, color);
 }
+
 </script>
 
 <template>
   <div>
     <div class="flex gap-0 w-[310px]">
-      <div v-for="(color, color_index) in color_scheme.colors"
+      <div v-for="(color, color_index) in colors"
         :key="color_index"
         class="w-full h-[40px] dropdown dropdown-hover dropdown-bottom"
         :style="{'background-color': color}"
@@ -42,9 +34,6 @@ const copy_color_code = (color) => {
           </div>
         </div>
       </div>
-    </div>
-    <div class="flex justify-center">
-      <p class="prose mt-1"><a class="link" :href="color_collection_source.url">{{ color_collection_source.name }}</a> - {{ color_scheme.name }}</p>
     </div>
     <Toast ref="toast_func"/>
   </div>
