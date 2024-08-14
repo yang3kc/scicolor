@@ -1,0 +1,314 @@
+[
+  {
+    "collection": "tableau",
+    "name": "Tableau 10",
+    "labels": ["categorical"],
+    "colors": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"]
+  },
+  {
+    "collection": "tableau",
+    "name": "Tableau 10 Medium",
+    "labels": ["categorical"],
+    "colors": ["#729ece", "#ff9e4a", "#67bf5c", "#ed665d", "#ad8bc9", "#a8786e", "#ed97ca", "#a2a2a2", "#cdcc5d", "#6dccda"]
+  },
+  {
+    "collection": "tableau",
+    "name": "Tableau 10 Light",
+    "labels": ["categorical"],
+    "colors": ["#aec7e8", "#ffbb78", "#98df8a", "#ff9896", "#c5b0d5", "#c49c94", "#f7b6d2", "#c7c7c7", "#dbdb8d", "#9edae5"]
+  },
+  {
+    "collection": "tableau",
+    "name": "Color Blind 10",
+    "labels": ["categorical", "color_blind_friendly"],
+    "colors": ["#006ba4", "#ff800e", "#ababab", "#595959", "#5f9ed1", "#c85200", "#898989", "#a2c8ec", "#ffbc79", "#cfcfcf"]
+  },
+  {
+    "collection": "Nord",
+    "name": "Polar Night / Snow Storm",
+    "labels": ["discrete", "sequential"],
+    "colors": ["#2E3440", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#E5E9F0", "#ECEFF4"]
+  },
+  {
+    "collection": "Nord",
+    "name": "Frost",
+    "labels": ["categorical"],
+    "colors": ["#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC"]
+  },
+  {
+    "collection": "Nord",
+    "name": "Aurora",
+    "labels": ["categorical"],
+    "colors": ["#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD"]
+  },
+  {
+    "collection": "Trubetskoy",
+    "name": "20-colors-1",
+    "labels": ["categorical"],
+    "colors": ["#E6194B", "#3CB44E", "#FFE119", "#4363D8", "#F58231", "#911EB4", "#42D4F4", "#F032E6", "#BFEF45", "#FABED4"]
+  },
+  {
+    "collection": "Trubetskoy",
+    "name": "20-colors-2",
+    "labels": ["categorical"],
+    "colors": ["#469990", "#DCBEFF", "#9A6324", "#FFFAC8", "#800000", "#AAFFC3", "#808000", "#FFD8B1", "#000075", "#A9A9A9"]
+  },
+  {
+    "collection": "Gruvbox",
+    "name": "Light",
+    "labels": ["categorical"],
+    "colors": ["#FB4934", "#83A598", "#FABD2F", "#FE8019", "#D3869B", "#8EC07C", "#B8BB26"]
+  },
+  {
+    "collection": "Gruvbox",
+    "name": "Medium",
+    "labels": ["categorical"],
+    "colors": ["#CC241D", "#458588", "#D79921", "#D65d0E", "#B16286", "#689D6A", "#98971A" ]
+  },
+  {
+    "collection": "Gruvbox",
+    "name": "Dark",
+    "labels": ["categorical"],
+    "colors": ["#9D0006", "#076678", "#B57614", "#D65D0E", "#8F3F71", "#427B58", "#79740E"]
+  },
+  {
+    "collection": "Gruvbox",
+    "name": "Context",
+    "labels": ["discrete", "sequential"],
+    "colors": ["#1D2021", "#282828", "#3C3836", "#594945", "#665C54", "#7C6F64", "#928374", "#A89984", "#BDAE93", "#D5C4A1", "#EBDBB2", "#FBF1C7", "#F9F5D7"]
+  },
+  {
+    "collection": "RPTH",
+    "name": "RPTH palette",
+    "labels": ["categorical", "color_blind_friendly"],
+    "colors": ["#003366", "#E31B23", "#005CAB", "#DCEEF3", "#FFC325", "#E6F1EE"]
+  },
+  {
+    "collection": "Wes Anderson",
+    "name": "Royal2",
+    "labels": ["categorical"],
+    "colors": ["#9A8822", "#F5CDB4", "#F8AFA8", "#FDDDA0", "#74A089"]
+  },
+  {
+    "collection": "Wes Anderson",
+    "name": "Moonrise3",
+    "labels": ["categorical"],
+    "colors": ["#85D4E3", "#F4B5BD", "#9C964A", "#CDC08C", "#FAD77B"]
+  },
+  {
+    "collection": "Wes Anderson",
+    "name": "GrandBudapest2",
+    "labels": ["categorical"],
+    "colors": ["#E6A0C4", "#C6CDF7", "#D8A499", "#7294D4"]
+  },
+  {
+    "collection": "Wes Anderson",
+    "name": "IsleofDogs2",
+    "labels": ["categorical"],
+    "colors": ["#EAD3BF", "#AA9486", "#B6854D", "#39312F", "#1C1718"]
+  },
+  {
+    "collection": "MetBrewer",
+    "name": "Cassatt1",
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
+    "colors": ["#b1615c", "#d88782", "#e3aba7", "#edd7d9", "#c9c9dd", "#9d9dc7", "#8282aa", "#5a5a83"]
+  },
+  {
+    "collection": "MetBrewer",
+    "name": "Hiroshige",
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
+    "colors": ["#e76254", "#ef8a47", "#f7aa58", "#ffd06f", "#ffe6b7", "#aadce0", "#72bcd5", "#528fad", "#376795", "#1e466e"]
+  },
+  {
+    "collection": "MetBrewer",
+    "name": "Hokusai2",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#abc9c8", "#72aeb6", "#4692b0", "#2f70a1", "#134b73", "#0a3351"]
+  },
+  {
+    "collection": "MetBrewer",
+    "name": "Isfahan2",
+    "labels": ["categorical", "color_blind_friendly"],
+    "colors": ["#d7aca1", "#ddc000", "#79ad41", "#34b6c6", "#4063a3"]
+  },
+  {
+    "collection": "MetBrewer",
+    "name": "Johnson",
+    "labels": ["categorical", "color_blind_friendly"],
+    "colors": ["#a00e00", "#d04e00", "#f6c200", "#0086a8", "#132b69"]
+  },
+  {
+    "collection": "MetBrewer",
+    "name": "Kandinsky",
+    "labels": ["categorical", "color_blind_friendly"],
+    "colors": ["#3b7c70", "#ce9642", "#898e9f", "#3b3a3e"]
+  },
+  {
+    "collection": "MetBrewer",
+    "name": "OKeeffe1",
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
+    "colors": ["#6b200c", "#973d21", "#da6c42", "#ee956a", "#fbc2a9", "#f6f2ee", "#bad6f9", "#7db0ea", "#447fdd", "#225bb2", "#133e7e"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "iiso_zeitung",
+    "labels": ["categorical"],
+    "colors": ["#ee8067", "#f3df76", "#00a9c0", "#f7ab76"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "iiso_daily",
+    "labels": ["categorical"],
+    "colors": ["#e76c4a", "#f0d967", "#7f8cb6", "#1daeb1", "#ef9640"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "rag-mysore",
+    "labels": ["categorical"],
+    "colors": ["#ec6c26", "#613a53", "#e8ac52", "#639aa0"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "rag-gol",
+    "labels": ["categorical"],
+    "colors": ["#d3693e", "#803528", "#f1b156", "#90a798"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "rag-virupaksha",
+    "labels": ["categorical"],
+    "colors": ["#f5736a", "#925951", "#feba4c", "#9d9b9d"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "retro",
+    "labels": ["categorical"],
+    "colors": [ "#69766f", "#9ed6cb", "#f7e5cc", "#9d8f7f", "#936454", "#bf5c32", "#efad57" ]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "retro-washedout",
+    "labels": ["categorical"],
+    "colors": [ "#878a87", "#cbdbc8", "#e8e0d4", "#b29e91", "#9f736c", "#b76254", "#dfa372" ]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "system.#05",
+    "labels": ["categorical"],
+    "colors": ["#db4549", "#d1e1e1", "#3e6a90", "#2e3853", "#a3c9d3"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "tundra1",
+    "labels": ["categorical"],
+    "colors": ["#40708c", "#8e998c", "#5d3f37", "#ed6954", "#f2e9e2"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "cc245",
+    "labels": ["categorical"],
+    "colors": ["#0d4a4e", "#ff947b", "#ead3a2", "#5284ab"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "ducci_e",
+    "labels": ["categorical"],
+    "colors": ["#c37c2b", "#f6ecce", "#000000", "#386a7a"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "ducci_f",
+    "labels": ["categorical"],
+    "colors": ["#596f7e", "#eae6c7", "#463c21", "#f4cb4c"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "hilda01",
+    "labels": ["categorical"],
+    "colors": ["#ec5526", "#f4ac12", "#9ebbc1", "#f7f4e2"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "hilda02",
+    "labels": ["categorical"],
+    "colors": ["#eb5627", "#eebb20", "#4e9eb8", "#f7f5d0"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "byrnes",
+    "labels": ["categorical"],
+    "colors": ["#c54514", "#dca215", "#23507f"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "kaffeprat",
+    "labels": ["categorical"],
+    "colors": ["#BCAA8C", "#D8CDBE", "#484A42", "#746B58", "#9A8C73"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "hurdles",
+    "labels": ["categorical"],
+    "colors": ["#e16503", "#dc9a0f", "#dfe2b4", "#66a7a6"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "tsu_akasaka",
+    "labels": ["categorical"],
+    "colors": ["#687f72", "#cc7d6c", "#dec36f", "#dec7af", "#ad8470", "#424637"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "jupiter",
+    "labels": ["categorical"],
+    "colors": ["#c03a53", "#edd09e", "#aab5af", "#023629", "#eba735", "#8e9380", "#6c4127"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "dt07",
+    "labels": ["categorical"],
+    "colors": ["#6a98a5", "#d24c18"]
+  },
+  {
+    "collection": "Chromotome",
+    "name": "delphi",
+    "labels": ["categorical"],
+    "colors": ["#475b62", "#7a999c", "#2a1f1d", "#fbaf3c", "#df4a33", "#f0e0c6", "#af592c"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "batlow 10",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#011959", "#103F60", "#1C5A62", "#3C6D56", "#687B3E", "#9D892B", "#D29343", "#F8A17B", "#FDB7BC", "#FACCFA"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "acton 10",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#2E214D", "#4B3B66", "#6E5480", "#926390", "#B26795", "#D17BA5", "#D495B8", "#D4ADC9", "#DBC9DC", "#E6E6F0"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "oslo 10",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#010101", "#0D1B29", "#133251", "#1F4C7B", "#3869A8", "#658AC7", "#89A0CA", "#AAB6CA", "#D4D6DB", "#FFFFFF"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "vik 10",
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
+    "colors": ["#001261", "#033E7D", "#1E6F9D", "#71A8C4", "#C9DDE7", "#EACEBD", "#D39774", "#BE6533", "#8B2706", "#590008"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "broc 10",
+    "labels": ["discrete", "diverging", "color_blind_friendly"],
+    "colors": ["#2C1A4C", "#284477", "#4B76A0", "#8BA7C2", "#CED9E5", "#E8E8D2", "#C5C58F", "#8D8D56", "#555527", "#262600"]
+  },
+  {
+    "collection": "Scientific colour",
+    "name": "oleron 10",
+    "labels": ["discrete", "sequential", "color_blind_friendly"],
+    "colors": ["#1A2659", "#455285", "#7784B7", "#AAB7E8", "#D3E0FA", "#3C5600", "#7A711F", "#B79A5E", "#F1CEA4", "#FDFDE6"]
+  }
+]
