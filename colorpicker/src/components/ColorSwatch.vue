@@ -11,11 +11,17 @@ const copy_color_code = (color) => {
     toast_func.value.showToast(`Color ${color} copied to clipboard!`, color);
 }
 
+const copy_all_color_codes = () => {
+    const color_codes = JSON.stringify(color_swatch_store.colors, null, 2);
+    navigator.clipboard.writeText(color_codes);
+    toast_func.value.showToast(`All color codes copied to clipboard!`, "#1f77b4");
+}
+
 </script>
 
 <template>
   <div v-if="color_swatch_store.colors.length > 0">
-    <div class="flex gap-0 w-[310px]">
+    <div class="flex gap-0 w-[310px] md:w-[800px]">
       <div v-for="(color, color_index) in color_swatch_store.colors"
         :key="color_index"
         class="w-full h-[40px] dropdown dropdown-hover dropdown-bottom"
@@ -34,6 +40,10 @@ const copy_color_code = (color) => {
           </div>
         </div>
       </div>
+    </div>
+    <div class="flex justify-center mt-4">
+      <div role="button" class="btn btn-outline btn-ghost" @click="color_swatch_store.remove_all_colors()">Remove all colors</div>
+      <div role="button" class="btn btn-outline btn-ghost" @click="copy_all_color_codes">Copy all color codes</div>
     </div>
     <Toast ref="toast_func"/>
   </div>

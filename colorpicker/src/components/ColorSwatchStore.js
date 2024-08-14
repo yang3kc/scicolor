@@ -22,4 +22,7 @@ export const color_swatch_store = reactive({
       color_swatch_store.colors.splice(color_index + 1, 0, color);
     }
   },
+  remove_all_colors: () => {
+    color_swatch_store.colors = [];
+  },
 });
