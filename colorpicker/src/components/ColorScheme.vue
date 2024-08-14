@@ -46,7 +46,7 @@ const copy_color_code = (color) => {
       </div>
     </div>
     <div class="flex justify-center">
-      <p class="prose mt-1"><a class="link" :href="color_collection_source.url">{{ color_collection_source.name }}</a> - {{ color_scheme.name }}</p>
+      <p class="prose mt-1"><a class="link" :href="color_collection_source.url" target="_blank">{{ color_collection_source.name }}</a> - {{ color_scheme.name }}</p>
     </div>
     <Toast ref="toast_func"/>
   </div>
