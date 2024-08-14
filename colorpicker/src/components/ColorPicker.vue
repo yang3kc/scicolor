@@ -16,7 +16,7 @@ onMounted(() => {
 
 <template>
   <div>
-  <div class="container flex justify-center">
+  <div class="container flex justify-center mb-4">
     <ColorSwatch />
   </div>
   <div class="container flex justify-center">

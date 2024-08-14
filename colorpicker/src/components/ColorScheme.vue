@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import Toast from '@/components/Toast.vue';
+import { color_swatch_store } from '@/components/ColorSwatchStore.js';
 
 // props
 const props = defineProps({
@@ -39,6 +40,7 @@ const copy_color_code = (color) => {
             <p class="prose font-mono font-bold text-center" @click="copy_color_code(color)">{{ color }}</p>
             <div class="h-[40px]" :style="{'background-color': color}" @click="copy_color_code(color)"></div>
             <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">Copy color code</div>
+            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.add_color(color)">Add to color swatch</div>
           </div>
         </div>
       </div>

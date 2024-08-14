@@ -1,11 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 import Toast from '@/components/Toast.vue';
-
+import { color_swatch_store } from '@/components/ColorSwatchStore.js';
 // data
-const colors = ref([
-    "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"
-]);
 const toast_func = ref(null);
 
 // methods
@@ -17,9 +14,9 @@ const copy_color_code = (color) => {
 </script>
 
 <template>
-  <div>
+  <div v-if="color_swatch_store.colors.length > 0">
     <div class="flex gap-0 w-[310px]">
-      <div v-for="(color, color_index) in colors"
+      <div v-for="(color, color_index) in color_swatch_store.colors"
         :key="color_index"
         class="w-full h-[40px] dropdown dropdown-hover dropdown-bottom"
         :style="{'background-color': color}"
@@ -31,6 +28,9 @@ const copy_color_code = (color) => {
             <p class="prose font-mono font-bold text-center" @click="copy_color_code(color)">{{ color }}</p>
             <div class="h-[40px]" :style="{'background-color': color}" @click="copy_color_code(color)"></div>
             <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">Copy color code</div>
+            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.remove_color(color_index)">Remove color</div>
+            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.move_color_left(color_index)">Move left</div>
+            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.move_color_right(color_index)">Move right</div>
           </div>
         </div>
       </div>
