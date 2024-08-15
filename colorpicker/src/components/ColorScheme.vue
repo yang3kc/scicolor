@@ -44,13 +44,13 @@ const copy_color_codes = (color_codes) => {
         >
         <div tabindex="0" class="card compact dropdown-content z-[1] bg-base-100 shadow w-[230px]">
           <div class="card-body">
-            <div class="h-[36px]" :style="{'background-color': color}" @click="copy_color_code(color)">
+            <div class="h-[36px] rounded-lg" :style="{'background-color': color}" @click="copy_color_code(color)">
               <p class="prose font-mono font-bold text-center mt-1" :style="{'color': getTextColor(color)}" @click="copy_color_code(color)">{{ color }}</p>
             </div>
-            <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">
+            <div class="btn btn-sm btn-outline" @click="copy_color_code(color)">
               <font-awesome-icon :icon="['far', 'copy']" />
               Copy color code</div>
-            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.add_color(color)">
+            <div class="btn btn-sm btn-outline" @click="color_swatch_store.add_color(color)">
               <font-awesome-icon :icon="['far', 'square-plus']" />
               Add to color swatch</div>
           </div>

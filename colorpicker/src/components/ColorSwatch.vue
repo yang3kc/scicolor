@@ -31,19 +31,19 @@ const copy_all_color_codes = () => {
         >
         <div tabindex="0" class="card compact dropdown-content z-[1] bg-base-100 shadow w-[200px]">
           <div class="card-body">
-            <div class="h-[36px]" :style="{'background-color': color}" @click="copy_color_code(color)">
+            <div class="h-[36px] rounded-lg" :style="{'background-color': color}" @click="copy_color_code(color)">
               <p class="prose font-mono font-bold text-center mt-1" @click="copy_color_code(color)">{{ color }}</p>
             </div>
-            <div class="btn btn-sm btn-ghost" @click="copy_color_code(color)">
+            <div class="btn btn-sm btn-outline" @click="copy_color_code(color)">
               <font-awesome-icon :icon="['far', 'copy']" />
               Copy color code</div>
-            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.remove_color(color_index)">
+            <div class="btn btn-sm btn-outline" @click="color_swatch_store.remove_color(color_index)">
               <font-awesome-icon :icon="['far', 'trash-can']" />
               Remove color</div>
-            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.move_color_left(color_index)">
+            <div class="btn btn-sm btn-outline" @click="color_swatch_store.move_color_left(color_index)">
               <font-awesome-icon :icon="['far', 'circle-left']" />
               Move left</div>
-            <div class="btn btn-sm btn-ghost" @click="color_swatch_store.move_color_right(color_index)">
+            <div class="btn btn-sm btn-outline" @click="color_swatch_store.move_color_right(color_index)">
               <font-awesome-icon :icon="['far', 'circle-right']" />
               Move right</div>
           </div>
