@@ -15,7 +15,7 @@ import ColorPicker from "@/components/ColorPicker.vue";
     </div>
     <div class="drawer-side">
       <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-      <div class="bg-base-200 min-h-full w-60 md:w-80 p-4">
+      <div class="bg-base-200 min-h-full w-60 md:w-80 p-4 text-center">
         <!-- Sidebar content here -->
         <p class="prose text-xl font-medium">Instructions</p>
         <p class="prose leading-5">
