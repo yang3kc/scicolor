@@ -7,9 +7,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
-import { faCopy as faCopyRegular, faCircleXmark as faCircleXmarkRegular, faTrashCan as faTrashCanRegular, faCircleLeft as faCircleLeftRegular, faCircleRight as faCircleRightRegular, faSquarePlus as faSquarePlusRegular, faCircleQuestion as faCircleQuestionRegular} from '@fortawesome/free-regular-svg-icons'
+import { faCopy as faCopyRegular, faCircleXmark as faCircleXmarkRegular, faTrashCan as faTrashCanRegular, faCircleLeft as faCircleLeftRegular, faCircleRight as faCircleRightRegular, faSquarePlus as faSquarePlusRegular, faCircleQuestion as faCircleQuestionRegular } from '@fortawesome/free-regular-svg-icons'
+import { faShuffle as faShuffleSolid, faBackwardStep as faBackwardStepSolid } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 /* add icons to the library */
-library.add(faCopyRegular, faCircleXmarkRegular, faGithub, faTrashCanRegular, faCircleLeftRegular, faCircleRightRegular, faSquarePlusRegular, faCircleQuestionRegular, faTwitter)
+library.add(faCopyRegular, faCircleXmarkRegular, faGithub, faTrashCanRegular, faCircleLeftRegular, faCircleRightRegular, faSquarePlusRegular, faCircleQuestionRegular, faTwitter, faShuffleSolid, faBackwardStepSolid)
 
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
