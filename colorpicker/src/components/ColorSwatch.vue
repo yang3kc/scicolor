@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 import Toast from '@/components/Toast.vue';
 import { color_swatch_store } from '@/components/ColorSwatchStore.js';
+import { getTextColor } from '@/components/utils.js';
+
 // data
 const toast_func = ref(null);
 
@@ -32,7 +34,9 @@ const copy_all_color_codes = () => {
         <div tabindex="0" class="card compact dropdown-content z-[1] bg-base-100 shadow w-[200px]">
           <div class="card-body">
             <div class="h-[36px] rounded-lg" :style="{'background-color': color}" @click="copy_color_code(color)">
-              <p class="prose font-mono font-bold text-center mt-1" @click="copy_color_code(color)">{{ color }}</p>
+              <p class="prose font-mono font-bold text-center mt-1"
+              :style="{'color': getTextColor(color)}"
+              @click="copy_color_code(color)">{{ color }}</p>
             </div>
             <div class="btn btn-sm btn-outline" @click="copy_color_code(color)">
               <font-awesome-icon :icon="['far', 'copy']" />
