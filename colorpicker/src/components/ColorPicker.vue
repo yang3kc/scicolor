@@ -9,6 +9,7 @@ const original_color_list = ref([]);
 const color_list_template = ref([]);
 const only_color_blind_friendly = ref(false);
 const at_least_colors = ref(0);
+const max_colors = ref(15);
 
 // methods
 onMounted(() => {
@@ -23,6 +24,7 @@ onMounted(() => {
       }
       // Create a separate copy of the original_color_list
       color_list_template.value = [...original_color_list.value];
+      max_colors.value = Math.max(...original_color_list.value.map((color_scheme) => color_scheme.colors.length));
     });
 });
 
@@ -80,7 +82,7 @@ const restore_color_list = () => {
       <div class="form-control flex items-center">
         <label class="label cursor-pointer">
           <span class="label-text prose mr-2">At least {{ at_least_colors }} colors</span>
-          <input type="range" min="0" max="15" v-model="at_least_colors" class="range range-xs w-40" />
+          <input type="range" :min="0" :max="max_colors" v-model="at_least_colors" class="range range-xs w-40" />
         </label>
       </div>
     </div>
