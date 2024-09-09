@@ -339,5 +339,19 @@
         "colors": ["#1A2659", "#455285", "#7784B7", "#AAB7E8", "#D3E0FA", "#3C5600", "#7A711F", "#B79A5E", "#F1CEA4", "#FDFDE6"]
       }
     ]
+  },
+  {
+    "collection": "Black Variants",
+    "collection_source": {
+      "url": "/",
+      "name": "Black Variants"
+    },
+    "color_schemes": [
+      {
+        "name": "Black Variants",
+        "labels": ["categorical"],
+        "colors": ["#121212", "#191919", "#252525", "#0A0A0A", "#1B1B1B", "#212427", "#0C0C0C", "#0B1215", "#222428", "#100D08", "#1D1F21", "#101720", "#212A37", "#232023", "#161618", "#181818", "#11181C", "#212124", "#2A2A2A", "#242526", "#212121"]
+      }
+    ]
   }
 ]
