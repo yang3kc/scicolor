@@ -19,7 +19,7 @@ import ColorPicker from "@/components/ColorPicker.vue";
         <!-- Sidebar content here -->
         <p class="prose text-xl font-medium">Instructions</p>
         <p class="prose leading-5">
-          Hover over or click on a color to see its hex code, copy the code to your clipboard directly, or add it to the Color Swatches for screening.
+          Hover over on a color to see its hex code, click on the color to copy the code to your clipboard directly, or add it to the Color Swatches for screening.
           Click <font-awesome-icon :icon="['far', 'copy']" /> to copy the whole color palette.
         </p>
         <p class="prose text-xl font-medium mt-4">About</p>
