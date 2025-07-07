@@ -33,7 +33,7 @@ defineExpose({
 </script>
 
 <template>
-    <div v-if="ToastShown" class="toast" :style="{ backgroundColor: ToastMessageColor, color: getTextColor(ToastMessageColor) }">
+    <div v-if="ToastShown" class="toast toast-end toast-top z-[9999] fixed" :style="{ backgroundColor: ToastMessageColor, color: getTextColor(ToastMessageColor) }">
         {{ ToastMessage }}
     </div>
 </template>

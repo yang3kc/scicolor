@@ -19,7 +19,7 @@ import ColorPicker from "@/components/ColorPicker.vue";
         <!-- Sidebar content here -->
         <p class="prose text-xl font-medium">Instructions</p>
         <p class="prose leading-5">
-          Hover over or click on a color to see its hex code, copy the code to your clipboard directly, or add it to the Color Swatches for screening.
+          Hover over on a color to see its hex code, click on the color to copy the code to your clipboard directly, or add it to the Color Swatches for screening.
           Click <font-awesome-icon :icon="['far', 'copy']" /> to copy the whole color palette.
         </p>
         <p class="prose text-xl font-medium mt-4">About</p>
@@ -34,6 +34,10 @@ import ColorPicker from "@/components/ColorPicker.vue";
         <p class="prose leading-5 mt-2">
           This tool is implemented as a <a class="link" href="https://vuejs.org/">Vue.js</a> app, with <a class="link" href="https://tailwindcss.com/">Tailwind CSS</a> and <a class="link" href="https://daisyui.com/">daisyUI</a> for styling.
           The icons are from <a class="link" href="https://fontawesome.com/">Font Awesome</a>.
+        </p>
+        <p class="prose text-xl font-medium mt-4">Contribution</p>
+        <p class="prose leading-5">
+          Want to add new color palettes? You can contribute by creating <a class="link" href="https://github.com/yang3kc/scicolor/issues" target="_blank">issues</a> or <a class="link" href="https://github.com/yang3kc/scicolor/pulls" target="_blank">pull requests</a> on GitHub.
         </p>
         <div class="flex justify-center mt-4">
           <a href="https://twitter.com/yang3kc" target="_blank">
