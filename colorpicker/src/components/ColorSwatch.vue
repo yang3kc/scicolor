@@ -30,6 +30,7 @@ const copy_all_color_codes = () => {
         :style="{'background-color': color}"
         role="button"
         tabindex="0"
+        @click="copy_color_code(color)"
         >
         <div tabindex="0" class="card compact dropdown-content z-[1] bg-base-100 shadow w-[200px]">
           <div class="card-body">
