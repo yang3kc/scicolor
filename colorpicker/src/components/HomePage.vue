@@ -35,6 +35,10 @@ import ColorPicker from "@/components/ColorPicker.vue";
           This tool is implemented as a <a class="link" href="https://vuejs.org/">Vue.js</a> app, with <a class="link" href="https://tailwindcss.com/">Tailwind CSS</a> and <a class="link" href="https://daisyui.com/">daisyUI</a> for styling.
           The icons are from <a class="link" href="https://fontawesome.com/">Font Awesome</a>.
         </p>
+        <p class="prose text-xl font-medium mt-4">Contribution</p>
+        <p class="prose leading-5">
+          Want to add new color palettes? You can contribute by creating <a class="link" href="https://github.com/yang3kc/scicolor/issues" target="_blank">issues</a> or <a class="link" href="https://github.com/yang3kc/scicolor/pulls" target="_blank">pull requests</a> on GitHub.
+        </p>
         <div class="flex justify-center mt-4">
           <a href="https://twitter.com/yang3kc" target="_blank">
             <font-awesome-icon :icon="['fab', 'twitter']" class="text-2xl mr-2 text-gray-700"/>
