@@ -353,5 +353,19 @@
         "colors": ["#121212", "#191919", "#252525", "#0A0A0A", "#1B1B1B", "#212427", "#0C0C0C", "#0B1215", "#222428", "#100D08", "#1D1F21", "#101720", "#212A37", "#232023", "#161618", "#181818", "#11181C", "#212124", "#2A2A2A", "#242526", "#212121"]
       }
     ]
+  },
+  {
+    "collection": "Masataka Okabe",
+    "collection_source": {
+      "url": "https://jfly.uni-koeln.de/color",
+      "name": "Masataka Okabe"
+    },
+    "color_schemes": [
+      {
+        "name": "Color Blind",
+        "labels": ["categorical", "color_blind_friendly"],
+        "colors": ["#000000", "#e69f00", "#56b4e9", "#009e73", "#f0e442", "#0071b2", "#d55e00", "#cc79a7"]
+      }
+    ]
   }
 ]
