@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scicolor"
-version = "1.1"
+version = "1.2"
 description = "Collections of color maps for scientific visualizations"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [
-    { name = "Kaicheng Yang", email = "yangkc@iu.edu" }
+    { name = "Kaicheng Yang", email = "yang3kc@gmail.com" }
 ]
 requires-python = ">=3.8"
 dependencies = [
@@ -19,8 +19,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yangkcatiu/scicolor"
-Repository = "https://github.com/yangkcatiu/scicolor"
+Homepage = "https://github.com/yang3kc/scicolor"
+Repository = "https://github.com/yang3kc/scicolor"
 
 [tool.hatch.build.targets.wheel]
 packages = ["scicolor"]
