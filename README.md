@@ -161,3 +161,83 @@ Currently the `scicolor` package only includes the color-blind-friendly colors f
 - matplotlib
 - pandas
 - numpy
+
+# Development and Publishing
+
+## For Contributors
+
+This project uses **uv** for dependency management and packaging.
+
+### Setup Development Environment
+```bash
+# Install dependencies and sync virtual environment
+uv sync
+
+# Test the package
+uv run python -c "import scicolor; print(scicolor.list_cmaps())"
+```
+
+### Adding Dependencies
+```bash
+# Add a new dependency
+uv add package-name
+
+# Add a development dependency
+uv add --dev package-name
+```
+
+## Publishing to PyPI
+
+### Testing with TestPyPI (Recommended First)
+Before publishing to the real PyPI, test with TestPyPI:
+
+1. **Create TestPyPI Account**
+   - Register at https://test.pypi.org/account/register/
+   - Verify your email
+
+2. **Create API Token**
+   - Go to https://test.pypi.org/manage/account/
+   - Create a new API token (save it immediately)
+
+3. **Build and Publish to TestPyPI**
+   ```bash
+   # Clean previous builds
+   rm -rf dist/
+
+   # Build the package
+   uv build
+
+   # Publish to TestPyPI
+   uv publish --publish-url https://test.pypi.org/legacy/
+
+   # When prompted:
+   # Username: __token__
+   # Password: <paste your TestPyPI token>
+   ```
+
+4. **Test Installation from TestPyPI**
+   ```bash
+   pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ scicolor
+   ```
+
+   Note: `--extra-index-url` is needed because dependencies are on regular PyPI.
+
+### Publishing to Production PyPI
+Once verified on TestPyPI:
+
+1. **Create PyPI Account**
+   - Register at https://pypi.org/account/register/
+
+2. **Create API Token**
+   - Go to https://pypi.org/manage/account/
+   - Create a new API token
+
+3. **Build and Publish**
+   ```bash
+   # Clean and build
+   rm -rf dist/
+   uv build
+
+   # Publish to PyPI
+   uv publish
+   ```
