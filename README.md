@@ -103,7 +103,7 @@ The color maps come from different sources, see the table below for details
 | Source                 | Color maps                                                                                                                                                                                             | Link                                                         |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
 | matplotlib             | tab20, tab20b, tab20c, viridis, inferno, cividis                                                                                                                                                       | https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html |
-| Scientific colour maps | batlow10, batlow25, acton10, acton25, oslo10, oslo25, turku10, turku25, vik10, vik25, roma10, roma25, broc10, broc25, oleron10, oleron25, batlowS, batlow, acton, oslo, turku, vik, roma, broc, oleron | http://www.fabiocrameri.ch/colourmaps.php                    |
+| Scientific colour maps | acton10, acton25, batlow10, batlow25, broc10, broc25, oleron10, oleron25, oslo10, oslo25, roma10, roma25, turku10, turku25, vik10, vik25, batlowS, acton, batlow, bamako, bilbao, buda, davos, devon, grayC, imola, lajolla, lapaz, lipari, navia, nuuk, oslo, turku, broc, cork, roma, managua, vik, oleron | http://www.fabiocrameri.ch/colourmaps.php                    |
 | Wes Anderson           | Royal2, Zissou1, Darjeeling1, FantasticFox1, Moonrise3, Cavalcanti1, GrandBudapest2, IsleofDogs2                                                                                                       | https://github.com/karthik/wesanderson                       |
 | CET                    | glasbey, cwr, isolum                                                                                                                                                                                   | https://peterkovesi.com/projects/colourmaps/                 |
 | ocean                  | topo                                                                                                                                                                                                   | https://matplotlib.org/cmocean/                              |
@@ -184,6 +184,18 @@ uv add package-name
 
 # Add a development dependency
 uv add --dev package-name
+```
+
+## Developing locally
+
+Test the package locally with Jupyter notebooks through the following command:
+```bash
+uv run --with jupyter jupyter notebook
+```
+
+Bump the version of the package with the following command:
+```bash
+uv version --bump <patch|minor|major>
 ```
 
 ## Publishing to PyPI

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scicolor"
-version = "1.2"
+version = "1.3"
 description = "Collections of color maps for scientific visualizations"
 readme = "README.md"
 license = { text = "MIT" }
