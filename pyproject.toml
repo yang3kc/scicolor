@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scicolor"
+version = "1.2"
+description = "Collections of color maps for scientific visualizations"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Kaicheng Yang", email = "yang3kc@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+]
+
+[project.urls]
+Homepage = "https://github.com/yang3kc/scicolor"
+Repository = "https://github.com/yang3kc/scicolor"
+
+[tool.hatch.build.targets.wheel]
+packages = ["scicolor"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "scicolor/**/*.py",
+    "scicolor/cet_colors/*.txt",
+    "scicolor/ocean_colors/*.txt",
+    "scicolor/scientific_colors/*.txt",
+]
