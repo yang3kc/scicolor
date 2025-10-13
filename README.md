@@ -186,6 +186,18 @@ uv add package-name
 uv add --dev package-name
 ```
 
+## Developing locally
+
+Test the package locally with Jupyter notebooks through the following command:
+```bash
+uv run --with jupyter jupyter notebook
+```
+
+Bump the version of the package with the following command:
+```bash
+uv version --bump <patch|minor|major>
+```
+
 ## Publishing to PyPI
 
 ### Testing with TestPyPI (Recommended First)
