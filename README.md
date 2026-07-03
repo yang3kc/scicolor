@@ -6,6 +6,8 @@ This python package contains a collection of nice color maps for scientific visu
 
 You can also check out the [Scicolor Color Picker](https://yang3kc.github.io/scicolor/), a web app for browsing and picking colors.
 
+If you work with an AI coding agent, the [`yanglabkit-scicolor`](https://github.com/YangKCLab/yanglabkit) skill recommends scicolor palettes for you: describe your data or chart and it returns a concrete palette with hex codes, defaulting to color-blind-safe, perceptually uniform choices.
+
 # Quick start
 
 ### Install
@@ -95,6 +97,8 @@ Figure below contains the guideline for choosing color maps.
 ![guideline](guideline.png)
 
 The figure was borrowed from [The misuse of colour in science communication](https://doi.org/10.1038/s41467-020-19160-7).
+
+The [`yanglabkit-scicolor`](https://github.com/YangKCLab/yanglabkit) agent skill applies this exact decision logic automatically, mapping your data structure to a palette class and returning a matching scicolor palette.
 
 # Color maps sources
 

@@ -1,5 +1,12 @@
 <script setup>
+import { ref } from "vue";
 import ColorPicker from "@/components/ColorPicker.vue";
+
+const showSkillBanner = ref(localStorage.getItem("hideSkillBanner") !== "true");
+function dismissSkillBanner() {
+  showSkillBanner.value = false;
+  localStorage.setItem("hideSkillBanner", "true");
+}
 </script>
 
 <template>
@@ -11,6 +18,13 @@ import ColorPicker from "@/components/ColorPicker.vue";
         <h1 class="text-2xl font-medium text-center prose">Scicolor Color Picker</h1>
         <font-awesome-icon :icon="['far', 'circle-question']" class="ml-2"/>
       </label>
+      <p v-if="showSkillBanner" class="text-sm text-center opacity-60 mt-2">
+        <font-awesome-icon :icon="['fas', 'robot']" class="mr-1" />
+        Using an AI agent? Try the
+        <a class="link" href="https://github.com/YangKCLab/yanglabkit" target="_blank"><code>yanglabkit-scicolor</code></a>
+        skill.
+        <button class="link ml-1" @click="dismissSkillBanner" aria-label="Dismiss">Dismiss</button>
+      </p>
       <ColorPicker />
     </div>
     <div class="drawer-side">
@@ -34,6 +48,10 @@ import ColorPicker from "@/components/ColorPicker.vue";
         <p class="prose leading-5 mt-2">
           This tool is implemented as a <a class="link" href="https://vuejs.org/">Vue.js</a> app, with <a class="link" href="https://tailwindcss.com/">Tailwind CSS</a> and <a class="link" href="https://daisyui.com/">daisyUI</a> for styling.
           The icons are from <a class="link" href="https://fontawesome.com/">Font Awesome</a>.
+        </p>
+        <p class="prose text-xl font-medium mt-4">Agent skill</p>
+        <p class="prose leading-5">
+          Using an AI coding agent? The <a class="link" href="https://github.com/YangKCLab/yanglabkit" target="_blank"><code>yanglabkit-scicolor</code></a> skill recommends scicolor palettes from a description of your data or chart, returning concrete hex codes and defaulting to color-blind-safe, perceptually uniform choices.
         </p>
         <p class="prose text-xl font-medium mt-4">Contribution</p>
         <p class="prose leading-5">
